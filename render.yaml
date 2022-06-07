@@ -8,7 +8,7 @@ services:
 - name: MnbRed-web
   type: web
   env: static
-  buildCommand: yarn && yarn rw deploy render web
+  buildCommand: yarn rw deploy render web
   staticPublishPath: ./web/dist
   envVars:
   - key: NODE_VERSION
@@ -23,7 +23,7 @@ services:
 #####
     destination: https://mnbred-api.onrender.com/
   - type: rewrite
-    source: /.redwood/functions/*
+    source: /*
     destination: /index.html
 
 - name: MnbRed-api
