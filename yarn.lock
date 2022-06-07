@@ -3560,7 +3560,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@redwoodjs/api-server@npm:1.5.1":
+"@redwoodjs/api-server@npm:1.5.1, @redwoodjs/api-server@npm:^1.5.1":
   version: 1.5.1
   resolution: "@redwoodjs/api-server@npm:1.5.1"
   dependencies:
@@ -7114,6 +7114,7 @@ __metadata:
   resolution: "api@workspace:api"
   dependencies:
     "@redwoodjs/api": 1.5.1
+    "@redwoodjs/api-server": ^1.5.1
     "@redwoodjs/graphql-server": 1.5.1
   languageName: unknown
   linkType: soft
